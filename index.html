@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <video src="src/1.mp4" 
+            type="video/mp4" loop class="clip1" muted></video>
+            <button onmouseover="play1()" onmouseout="play11()" class="btn1">video 1</button>
+        </div>
+        <div class="box">
+            <video src="src/2.mp4" 
+            type="video/mp4" loop class="clip2" muted></video>
+            <button onmouseover="play2()" onmouseout="play22()" class="btn2">video 1</button>
+        </div>
+        <div class="box">
+            <video src="src/3.mp4" 
+            type="video/mp4" loop class="clip3" muted></video>
+            <button onmouseover="play3()" onmouseout="play33()" class="btn3">video 1</button>
+        </div>
+        <div class="box">
+            <video src="src/4.mp4" 
+            type="video/mp4" loop class="clip4" muted></video>
+            <button onmouseover="play4()" onmouseout="play44()" class="btn4">video 1</button>
+        </div>
+   
+    </div>
+
+    <script src="func.js"></script>
+    <!-- <script>
+        const clip = document.querySelectorAll('.clip');
+        for(let i = 0; i<clip.length; i++) {
+            clip[i].addEventListener('mouseenter',
+            function(e) {
+                clip[i].play()
+            })
+            clip[i].addEventListener('mouseout',
+            function(e) {
+                clip[i].pause()
+            })
+        }
+    </script> -->
+</body>
+</html>
